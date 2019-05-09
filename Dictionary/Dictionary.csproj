@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{517E7F65-B87B-4514-99E0-E4B44896FC97}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Dictionary</RootNamespace>
+    <AssemblyName>Dictionary</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dataBase.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKayitOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKayitOl.Designer.cs">
+      <DependentUpon>frmKayitOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayitGiris.cs" />
+    <Compile Include="kelimeEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kelimeEkle.Designer.cs">
+      <DependentUpon>kelimeEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kelimeGüncellemeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kelimeGüncellemeFrm.Designer.cs">
+      <DependentUpon>kelimeGüncellemeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kelimeIslemleri.cs" />
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteriKayitOl.cs" />
+    <Compile Include="odevDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>odevDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="odevDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>odevDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="odevDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>odevDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="odevDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>odevDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="odevDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>odevDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="odevDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>odevDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="odevDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>odevDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SifreGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifreGuncelle.Designer.cs">
+      <DependentUpon>SifreGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="testetme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testetme.Designer.cs">
+      <DependentUpon>testetme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="veriTabaninaEkleme.cs" />
+    <Compile Include="yeniKelime.cs" />
+    <Compile Include="yeniSifre.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKayitOl.resx">
+      <DependentUpon>frmKayitOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kelimeEkle.resx">
+      <DependentUpon>kelimeEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kelimeGüncellemeFrm.resx">
+      <DependentUpon>kelimeGüncellemeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SifreGuncelle.resx">
+      <DependentUpon>SifreGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testetme.resx">
+      <DependentUpon>testetme.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="odevDataSet.xsc">
+      <DependentUpon>odevDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="odevDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>odevDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="odevDataSet.xss">
+      <DependentUpon>odevDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="odevDataSet1.xsc">
+      <DependentUpon>odevDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="odevDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>odevDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="odevDataSet1.xss">
+      <DependentUpon>odevDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="odevDataSet2.xsc">
+      <DependentUpon>odevDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="odevDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>odevDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="odevDataSet2.xss">
+      <DependentUpon>odevDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="odevDataSet3.xsc">
+      <DependentUpon>odevDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="odevDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>odevDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="odevDataSet3.xss">
+      <DependentUpon>odevDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="odevDataSet4.xsc">
+      <DependentUpon>odevDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="odevDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>odevDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="odevDataSet4.xss">
+      <DependentUpon>odevDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="odevDataSet5.xsc">
+      <DependentUpon>odevDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="odevDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>odevDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="odevDataSet5.xss">
+      <DependentUpon>odevDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="odevDataSet6.xsc">
+      <DependentUpon>odevDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="odevDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>odevDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="odevDataSet6.xss">
+      <DependentUpon>odevDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\kitap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\kurt.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icons8-go-back-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\gozluk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\beyin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\ara.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
